@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "TPGL",
+			"path": ".."
+		},
+		{
+			"name": "fontawesome",
+			"path": "../../../../../../home/ishimw3/Desktop/Gestion Des salles de classes/fontawesome"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TPGL"
+	}
+}

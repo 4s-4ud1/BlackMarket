@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Black Market</title>
+
+  <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+  <link rel="shortcut icon" href="../img/blackM.jpg" type="img/jpeg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-search">
+        <input type="search" name="search" placeholder="Rechercher un produit..." class="input-field">
+
+        <button class="search-btn" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <a href="#" class="logo">
+        <img src="../img/blackMwhite.jpg" alt="Black Market logo" width="250" height="150">
+
+
+      </a>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" icon-user>
+          <i class="fas fa-user" aria-hidden="true"></i>
+
+          <p class="header-action-label">.</p>
+        </button>
+
+        <button class="header-action-btn">
+          <i class="fas fa-search" aria-hidden="true"></i>
+
+          <p class="header-action-label">Rechercher</p>
+        </button>
+
+        <button class="header-action-btn" icon-cart>
+          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+
+          <p class="header-action-label">.</p>
+
+          <div class="btn-badge green" aria-hidden="true">3</div>
+        </button>
+
+        <button class="header-action-btn">
+          <i class="far fa-heart" aria-hidden="true" style="color: red;"></i>
+
+          <p class="header-action-label">.</p>
+
+          <div class="btn-badge" aria-hidden="true" style="background: red;">2</div>
+        </button>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="Ouvrir Menu" data-nav-open-btn>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="" class="logo">
+            <img src="../img/blackMblack.jpg" alt="Black Market logo" width="200" height="150">
+          </a>
+
+          <button class="nav-close-btn" data-nav-close-btn aria-label="Fermer Menu">
+            <i class="fas fa-times"></i>
+          </button>
+
+        </div>
+
+
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link">Acceuil</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Boutique</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">A Propos</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contacts</a>
+          </li>
+        </ul>
+
+
+      </nav>
+    </div>
+  </header>
+
+
+
+  <!--  Barre d'outils  -->
+
+  <div class="small-menu" data-menu>
+    <div class="cont">
+
+      <h1>Panier</h1>
+      
+    </div>
+
+    <div class="liste-panier">
+
+      <div class="items">
+
+        <div class="image">
+          <img src="../img/sac1.jpg" alt="">
+        </div>
+
+        <div class="name">
+          Sac A Main Motif Ovales
+        </div>
+
+        <div class="totalPrice">
+          164000 BIF
+        </div>
+
+        <div class="quantite">
+
+          <span class="minus">-</span>
+          <span>1</span>
+          <span class="plus">+</span>
+
+        </div>
+
+      </div>
+
+      <div class="items">
+
+        <div class="image">
+          <img src="../img/sac7.jpg" alt="">
+        </div>
+
+        <div class="name">
+          Japanese Cut En Cuir
+        </div>
+
+        <div class="totalPrice">
+          325000 BIF
+        </div>
+
+        <div class="quantite">
+
+          <span class="minus">-</span>
+          <span>1</span>
+          <span class="plus">+</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="btn-fin">
+      <button>
+        Commander
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Barre de connexion-->
+
+  <div class="small-menu-log" login-menu>
+    <div class="cont">
+
+      <h1>Se connecter</h1>
+
+      <div class="login-page">
+
+        <form action="validate.php" method="post">
+
+          <tr><th>Email</th><td><input type="email" name="email"></td></tr>
+          <tr><th>Mot De Passe</th><td><input type="password" name="motDpasse"></td></tr>
+          <tr><td colspan="2" align="center"><input type="checkbox" name="rester-connecté" value="1">Se Souvenir De Moi</td></tr>
+          <tr><td colspan="2" align="right"><span class="btn-fin"><button type="submit">Se connecter</button></span></td></tr>
+
+        </form>
+
+      </div>
+      
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <!-- Premiere vue-->
+  <section class="hello" id="home" style="background-image: url('../img/wall.jpg')">
+
+    <div class="container">
+
+      <div class="hello-content">
+
+        <p class="hello-subtitle">Kuberwa Ubudasiba...</p>
+
+        <h2 class="H1 hello-title">Le Sac Comme Jamais Auparavant</h2>
+
+        <button class="btn btn-primary">Acheter</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Categories -->
+
+  <section class="section-categorie">
+    <div class="container">
+
+      <ul class="categorie-list">
+
+        <li class="categorie-item">
+          <figure class="categorie-banner">
+            <img src="../img/cat1.jpg" alt="Lunettes de Soleil" loading="lazy" class="w-100" width="510"
+              height="600">
+
+          </figure>
+
+          <a href="#" class="btn btn-secondary">Cuir Fashion</a>
+        </li>
+
+
+        <li class="categorie-item">
+          <figure class="categorie-banner">
+            <img src="../img/cat2.jpg" alt="Vetements legers" loading="lazy" class="w-100" width="510"
+              height="600">
+
+          </figure>
+
+          <a href="#" class="btn btn-secondary">Cuir & Autres</a>
+        </li>
+
+
+        <li class="categorie-item">
+          <figure class="categorie-banner">
+            <img src="../img/cat3.jpg" alt="Survetements" loading="lazy" class="w-100" width="510" height="600">
+
+          </figure>
+
+          <a href="#" class="btn btn-secondary">Sacs Premium</a>
+        </li>
+
+
+        <li class="categorie-item">
+          <figure class="categorie-banner">
+            <img src="../img/cat4.jpg" alt="Chaussures" loading="lazy" class="w-100" width="510" height="600">
+
+          </figure>
+
+          <a href="#" class="btn btn-secondary">Voyage</a>
+        </li>
+
+
+        <li class="categorie-item">
+          <figure class="categorie-banner">
+            <img src="../img/cat5.jpg" alt="Bijoux" loading="lazy" class="w-100" width="510" height="600">
+
+          </figure>
+
+          <a href="#" class="btn btn-secondary">Casual</a>
+        </li>
+
+
+        <li class="categorie-item">
+          <figure class="categorie-banner">
+            <img src="../img/cat6.jpg" alt="Casquettes" loading="lazy" class="w-100" width="510" height="600">
+
+          </figure>
+
+          <a href="#" class="btn btn-secondary">Eco-LifeStyle</a>
+        </li>
+
+
+
+
+      </ul>
+
+    </div>
+  </section>
+
+
+
+  <!-- Produits -->
+
+  <section class="section produit">
+    <div class="container">
+
+      <h2 class="h2 section-title">Tendance Actuelle</h2>
+
+      <ul class="filter-list">
+        <li>
+          <button class="filter-btn active">Best Seller</button>
+        </li>
+
+        <li>
+          <button class="filter-btn">Meilleur Collection</button>
+        </li>
+
+        <li>
+          <button class="filter-btn">Nouveau Style</button>
+        </li>
+
+        <li>
+          <button class="filter-btn">Arrivages</button>
+        </li>
+      </ul>
+
+      <ul class="produit-list">
+
+        <li>
+
+          <div class="produit-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="../img/sac2.jpg" alt="Sac à main en cuir" class="w-100" loading="lazy" width="800"
+                  height="1034">
+              </a>
+
+              <div class="card-badge red">-10%</div>
+
+              <div class="card-actions">
+
+                <button class="card-action-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+
+                <button class="card-action-btn cart-btn">
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+
+                <button class="card-action-btn" aria-label="Ajouter aux Favoris">
+                  <i class="fas fa-heart" style="color: red;"></i>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Sac à Main en Cuir</a>
+              </h3>
+
+              <div class="card-price">
+                <data value="154000">154 000 BIF</data>
+
+                <data value="160000">160 000 BIF</data>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+
+        <li>
+
+          <div class="produit-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="../img/sac1.jpg" alt="Chemise En Carreaux" class="w-100" loading="lazy" width="800"
+                  height="1034">
+              </a>
+
+              <div class="card-badge green">Nouveauté</div>
+
+              <div class="card-actions">
+
+                <button class="card-action-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+
+                <button class="card-action-btn cart-btn">
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+
+                <button class="card-action-btn" aria-label="Ajouter aux Favoris">
+                  <i class="fas fa-heart" style="color: red;"></i>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Sac A Main Motif Ovales</a>
+              </h3>
+
+              <div class="card-price">
+                <data value="164000">164 000 BIF</data>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+
+        <li>
+
+          <div class="produit-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="../img/sac3.jpg" alt="Grand Atlantic Chukka Boots" class="w-100" loading="lazy"
+                  width="800" height="1034">
+              </a>
+
+              <div class="card-actions">
+
+                <button class="card-action-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+
+                <button class="card-action-btn cart-btn">
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+
+                <button class="card-action-btn" aria-label="Ajouter aux Favoris">
+                  <i class="fas fa-heart" style="color: red;"></i>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Grand Atlantic Chukka</a>
+              </h3>
+
+              <div class="card-price">
+                <data value="240000">240 000 BIF</data>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+
+        <li>
+
+          <div class="produit-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="../img/sac4.jpg" alt="Chemise Haute Couture Pour Femmes" class="w-100" loading="lazy"
+                  width="800" height="1034">
+              </a>
+
+              <div class="card-actions">
+
+                <button class="card-action-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+
+                <button class="card-action-btn cart-btn">
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+
+                <button class="card-action-btn" aria-label="Ajouter aux Favoris">
+                  <i class="fas fa-heart" style="color: red;"></i>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Faux-Trim</a>
+              </h3>
+
+              <div class="card-price">
+                <data value="80000">80 000 BIF</data>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+
+        <li>
+
+          <div class="produit-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="../img/sac9.jpg" alt="T-Shirt Noir Unisex" class="w-100" loading="lazy" width="800"
+                  height="1034">
+              </a>
+
+              <div class="card-actions">
+
+                <button class="card-action-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+
+                <button class="card-action-btn cart-btn">
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+
+                <button class="card-action-btn" aria-label="Ajouter aux Favoris">
+                  <i class="fas fa-heart" style="color: red;"></i>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Sobre Et Atus</a>
+              </h3>
+
+              <div class="card-price">
+                <data value="130000">130 000 BIF</data>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+
+        <li>
+
+          <div class="produit-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="../img/sac6.jpg" alt="Smart-Watch HUAWEI" class="w-100" loading="lazy" width="800"
+                  height="1034">
+              </a>
+
+              <div class="card-actions">
+
+                <button class="card-action-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+
+                <button class="card-action-btn cart-btn">
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+
+                <button class="card-action-btn" aria-label="Ajouter aux Favoris">
+                  <i class="fas fa-heart" style="color: red;"></i>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Smart-Bag</a>
+              </h3>
+
+              <div class="card-price">
+                <data value="120000">120 000 BIF</data>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+
+        <li>
+
+          <div class="produit-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="../img/sac7.jpg" alt="Lunettes de Soleil Bleu" class="w-100" loading="lazy" width="800"
+                  height="1034">
+              </a>
+
+              <div class="card-actions">
+
+                <button class="card-action-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+
+                <button class="card-action-btn cart-btn">
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+
+                <button class="card-action-btn" aria-label="Ajouter aux Favoris">
+                  <i class="fas fa-heart" style="color: red;"></i>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Japanese Cut en Cuir</a>
+              </h3>
+
+              <div class="card-price">
+                <data value="325000">325 000 BIF</data>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+
+        <li>
+
+          <div class="produit-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="../img/sac8.jpg" alt="Chemise Pour Homme Beige" class="w-100" loading="lazy" width="800"
+                  height="1034">
+              </a>
+
+              <div class="card-actions">
+
+                <button class="card-action-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+
+                <button class="card-action-btn cart-btn">
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+
+                <button class="card-action-btn" aria-label="Ajouter aux Favoris">
+                  <i class="fas fa-heart" style="color: red;"></i>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Pinky Way</a>
+              </h3>
+
+              <div class="card-price">
+                <data value="70000">70 000 BIF</data>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+
+        <li>
+
+          <div class="produit-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="../img/sac5.jpg" alt="Robe Des Iles" class="w-100" loading="lazy" width="800"
+                  height="1034">
+              </a>
+
+              <div class="card-badge red">-50%</div>
+
+              <div class="card-actions">
+
+                <button class="card-action-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+
+                <button class="card-action-btn cart-btn">
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+
+                <button class="card-action-btn" aria-label="Ajouter aux Favoris">
+                  <i class="fas fa-heart" style="color: red;"></i>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Sac Des Iles</a>
+              </h3>
+
+              <div class="card-price">
+                <data value="140000">140 000 BIF</data>
+
+                <data value="280000">280 000 BIF</data>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+
+        <li>
+
+          <div class="produit-card">
+
+            <figure class="card-banner">
+
+              <a href="#">
+                <img src="../img/sac10.jpg" alt="Peignoir En Cotton Urban" class="w-100" loading="lazy" width="800"
+                  height="1034">
+              </a>
+
+              <div class="card-badge green">Nouveauté</div>
+
+              <div class="card-actions">
+
+                <button class="card-action-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+
+                <button class="card-action-btn cart-btn">
+                  <i class="fas fa-shopping-bag"></i>
+                </button>
+
+                <button class="card-action-btn" aria-label="Ajouter aux Favoris">
+                  <i class="fas fa-heart" style="color: red;"></i>
+                </button>
+
+              </div>
+
+            </figure>
+
+            <div class="card-content">
+              <h3 class="h4 card-title">
+                <a href="#">Urban Cut</a>
+              </h3>
+
+              <div class="card-price">
+                <data value="150000">150 000 BIF</data>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+
+
+
+      </ul>
+
+      <button class="btn btn-outline">Voir Touts Les Produits</button>
+
+    </div>
+  </section>
+
+
+
+  <!-- NEWSLETTER -->
+
+  <section class="section newsletter">
+
+    <div class="container">
+
+      <div class="newsletter-card" style="background-image: url('../img/newsletter-bg.png');">
+
+        <h2 class="card-title">S'Abonner À La Newsletter</h2>
+
+        <p class="card-text">
+          Entrez Vos Informations Pour Ne Rien Rater
+        </p>
+
+        <form action="" class="card-form">
+
+          <div class="input-wrapper">
+            <label><i class="fas fa-address-book"></i></label>
+
+            <input type="text" name="nom" required class="input-field" placeholder="Nom Et Prénom">
+
+          </div>
+
+          <div class="input-wrapper-two">
+            <label><i class="fas fa-envelope"></i></label>
+
+            <input type="text" name="nom" required class="input-field" placeholder="Entrez Votre Email...">
+
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">
+            <span>S'Abonner</span>
+
+            <i class="far fa-paper-plane" aria-hidden="true"></i>
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!--  Footer -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="../img/blackM.png" alt="Black Market logo" width="300px" height="200px">
+
+          </a>
+
+          <p class="footer-text">
+            Black Market est une boutique Fashion qui donne vie à vos rêves de beauté les plus fous
+            Partant des habits, des bijoux jusqu'aux accesoires de mode
+            Vous trouverez surement votre perle rare.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="../img/facebook-f.svg" alt="Facebook">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="../img/instagram.svg" alt="Facebook">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="../img/twitter.svg" alt="Facebook">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="../img/whatsapp.svg" alt="Facebook">
+              </a>
+            </li>
+
+          </ul>
+
+
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="footer-list-title">Categories</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Vetements Legers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Survetements</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chaussures</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Bijoux</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Autres Accessoires</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="footer-list-title">Aide & Support</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Points de Vente</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Conditions De Remboursements</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Adresse</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href="#">Ayes Art</a>. Touts Les Droits Réservés
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="" class="footer-bottom-link">Conditions d'Utilisations</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-bottom-link">Politiques de Confidentialités</a>
+          </li>
+
+          <li>
+            <a href="" class="footer-bottom-link">Notre Localisation</a>
+          </li>
+
+        </ul>
+
+
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <main>
+    <article>
+
+
+    </article>
+  </main>
+
+
+
+  <script src="../js/script.js"></script>
+
+</body>
+
+</html>
